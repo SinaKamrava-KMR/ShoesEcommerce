@@ -8,7 +8,7 @@ const storage = new Catch();
   if (storage.checkSplashstate()) {
     page.go('login')
   } else {
-    storage.setSplashstate()
+    storage.setSplashstate('on')
   }
   
 })()

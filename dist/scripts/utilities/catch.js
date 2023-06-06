@@ -10,12 +10,16 @@ export class Catch{
 
 
    checkSplashstate() {
-    const state = this.#getItem('spalsh');
-    return state?.[0] ? true : false;
+     const state = this.#getItem('spalsh');
+     if (state?.[0] == 'on') {
+       return true
+     } else {
+       return false;
+     }
   }
 
-   setSplashstate() {
-    this.#setItem('spalsh', 'on');
+   setSplashstate(value) {
+    this.#setItem('spalsh', value);
   }
 
 

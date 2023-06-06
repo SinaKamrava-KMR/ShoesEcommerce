@@ -92,7 +92,7 @@ loginBtn.addEventListener("click", (e) => {
         email: emailInput.value,
         password: passwordInput.value,
         remember: RememberCheck.checked ? "on" : 'off',
-        checkout:'of'
+        checkout:'off'
       };
 
       storage.setUser(user);
@@ -103,7 +103,8 @@ loginBtn.addEventListener("click", (e) => {
 });
 
 back.addEventListener('click', () => {
-  page.go('landing')
+  storage.setSplashstate('off')
+  page.go('landing');
 })
 /* =================================Functions====================================== */
 
