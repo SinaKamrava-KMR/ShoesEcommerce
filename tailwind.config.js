@@ -31,13 +31,25 @@ module.exports = {
           '100%': { transform: 'translateX(0)' ,opacity:'1'},
           
         },
+        comeUp: {
+          '0%': { transform: 'translateY(-300px) translateX(-50%)'},
+          '100%': { transform: 'translateY(0) translateX(-50%)' },
+          
+        },
+        backUp: {
+          '0%': { transform: 'translateY(0) translateX(-50%)'},
+          '100%': { transform: 'translateY(-300px) translateX(-50%)' },
+          
+        },
         
       },
       animation: {
         'wide': 'wide 1s linear',
         'fadeOut': 'fadeOut .8s ease-in forwards',
         'fadeIn': 'fadeIn .8s ease-in forwards',
-        'comeLeft': 'comeLeft .8s ease-in forwards',
+        'comeLeft': 'comeLeft 1s ease-in forwards',
+        'comeUp': 'comeUp .6s ease-in forwards',
+        'backUp': 'backUp 1s ease-in forwards',
       }
     },
 

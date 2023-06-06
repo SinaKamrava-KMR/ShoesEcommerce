@@ -1,3 +1,18 @@
+import { Page } from "../utilities/page.js";
+import { Catch } from "../utilities/catch.js";
+
+const page = new Page();
+const storage = new Catch();
+(() => {
+
+  if (storage.checkSplashstate()) {
+    page.go('login')
+  } else {
+    storage.setSplashstate()
+  }
+  
+})()
+
 
 const spalsh = document.getElementById("splash");
 const intro = document.getElementById("landing-intro");
@@ -14,11 +29,16 @@ const sliderTexts = ['We provide high quality products just for you', 'Your sati
 nextBtn.addEventListener('click', () => {
 
   count++;
-  if (count > 2) return;
-  if(count==2) nextBtn.textContent = 'Get Started';
+  if (count > 2) {
+    page.go('login');
+    return;
+  };
+  if (count == 2) nextBtn.textContent = 'Get Started';
   slideImage()
   
-})
+});
+
+
 
 
 

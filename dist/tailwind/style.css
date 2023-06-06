@@ -69,4 +69,33 @@
     @apply w-full bg-slate-900 text-white rounded-full py-1 mt-3
   }
 
+  .back-icon{
+    @apply absolute left-3 top-3 md:top-5 md:left-5 cursor-pointer
+  }
+
+  .dark-logo-wrapper{
+    @apply w-full h-[250px] flex items-center justify-center
+  }
+  
+  .deactive-btn{
+    @apply bg-slate-600
+  }
+
+  .login-form{
+    @apply w-full md:w-2/6 flex-1 flex flex-col items-center px-6 pb-5
+  }
+
+  .inputs-wrapper{
+    @apply w-full flex-1 flex flex-col items-center  gap-6
+  }
+
+  .login-input{
+    @apply flex gap-3 mt-1 items-center bg-gray-50 rounded-sm w-full px-3 py-2 relative
+  }
+
+  .login-modal{
+    @apply absolute top-5 left-1/2 -translate-x-1/2 bg-red-500 rounded-sm px-5 py-1 text-white -translate-y-52
+  }
+
+
 }
