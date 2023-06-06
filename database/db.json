@@ -1,9 +1,53 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
+  "users": [
+    {
+      "id": "1deacb16-3554-45f9-a51f-a41349492cae", 
+      "firstName": "sina",
+      "lastName": "kamrava" ,
+      "email": "sina@gmail.com" ,
+      "password": "123" ,
+      "addresses":{
+        "home":"tonekabon,mazandaran,22",
+        "office":",ramsar,mazandaran,45"
+      },
+      "ordersID":["e69e75dc-4a12-46ed-8482-2ac01cbed21c","7e28f42c-596e-420b-9afe-7269f0095551"],
+      "wishlists":["f6cec550-903a-4ab8-8ed8-f0f595a986f8","09f87817-f3e2-411d-af1b-91b64dd51926"]
+     },
+    {
+      "id": "a137dd66-7109-42e6-bb60-19b83da4b469", 
+      "firstName": "Ali",
+      "lastName": "Samadi" ,
+      "email": "samad@gmail.com" ,
+      "password": "123" ,
+      "addresses":{
+        "home":"Tehran,Tehran,43",
+        "office":",Lahijan,Gilan,56"
+      },
+      "ordersID":["e69e77dc-4a12-46ed-8482-2ac01cbed21c","7e28f42c-596e-420b-9nfe-7269f0095551"],
+      "wishlists":["f6cec450-903a-4ab8-8ed8-f0f595a986f8","09f87817-f3e2-411d-af2b-91b64dd51926"]
+     },
+    {
+      "id": "29fb3045-faf1-47b6-b4b0-3f34c81aa1b3", 
+      "firstName": "Yaser",
+      "lastName": "Hamedi" ,
+      "email": "hamed@gmail.com" ,
+      "password": "123" ,
+      "addresses":{
+        "home":"rasht,Gilan,22",
+        "office":",Fooman,Gilan,66"
+      },
+      "ordersID":["a69e75dc-4a12-46ed-8482-2ac01cbed21c","7e28f42c-596a-420b-9afe-7269f0095551"],
+      "wishlists":["f6cec551-903a-4ab8-8ed8-f0f595a986f8","09f87817-f3e2-411d-af1b-91b64dd51928"]
+     }
+    
+    ],
+  "product": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  ]
 }

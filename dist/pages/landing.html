@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing</title>
+  <link rel="stylesheet" href="../css/main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js" integrity="sha512-XCthc/WzPfa+oa49Z3TI6MUK/zlqd67KwyRL9/R19z6uMqBNuv8iEnJ8FWHUFAjC6srr8w3FMZA91Tfn60T/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="w-screen h-screen bg-white">
+
+      <section id="splash" class="h-full w-full relative">
+
+        <div class="splash-logo">
+          <span class="logo-wrapper">
+            <img  src="../../assets/icons/light-logo.png" alt="shoea logo">
+          </span>
+          <span class="overflow-hidden  animate-wide"><p class="logo-text">Shoea</p></span>
+        </div>
+
+
+
+        <div id="loading-aniamtion" class="loading">
+        </div>
+
+        
+      </section>
+
+      <section id="landing-intro" class="intro-page hidden">
+
+        <div class="w-full h-full  absolute inset-0 ">
+          <img class="w-full h-full object-cover" src="../../assets/images/w1.png" alt="wishlist">
+        </div>
+
+        <div class="forground">
+        </div>
+
+        <div class="intro-box">
+          <span class="flex items-center gap-4"><p class="text-4xl md:text-5xl">Welcome to</p> <img src="../../assets/images/hand.png"></span>
+          <p class="text-7xl font-bold md:text-9xl">Shoea</p>
+          <p class="md:text-2xl">The best sneakers & shoes e-commerse app of the century for your fashion needs!</p>
+        </div>
+
+
+      </section>
+
+      <section id="slider-page" class="slider-wrapper hidden">
+          <div id="slider" class="slider">
+            <img src="../../assets/images/w2.png" alt="shoes" class="slide">
+            <img src="../../assets/images/w3.png" alt="shoes" class="slide">
+            <img src="../../assets/images/w4.png" alt="shoes" class="slide">
+
+
+          </div>
+
+          <div class="px-5 pb-3 flex flex-col md:justify-end gap-3 ">
+            <p class="hidden md:flex text-9xl font-bold font-Lilita text-dark-txt mb-10">Shoea</p>
+            <div class="slide-text">
+              <p class="animate-comeLeft">We provide high quality products just for you</p>
+            </div>
+              <div class="flex justify-center">
+                <div class="seprats">
+                  <span class="seprate" data-id="1"></span>
+                  <span class="seprate" data-id="2"></span>
+                  <span class="seprate" data-id="3"></span>
+                  <span class="seprats-line"></span>
+                </div>
+              </div>
+  
+              <button id="next-btn" class="next-btn">Next</button>
+
+          </div>
+          
+      </section>
+
+
+  
+  <script type="module" src="../scripts/components/landing.js"></script>
+</body>
+</html>
