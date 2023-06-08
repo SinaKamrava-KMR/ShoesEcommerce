@@ -883,10 +883,6 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.static {
-  position: static;
-}
-
 .absolute {
   position: absolute;
 }
