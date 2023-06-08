@@ -95,7 +95,7 @@ loginBtn.addEventListener("click", (e) => {
         checkout:'off'
       };
 
-      storage.setUser(user);
+      
       findUser(user);
       
     }
@@ -169,6 +169,7 @@ function findUser(user) {
     .then((users) => {
       if (checkUserValidation(user, users)) {
         console.log("go to index page");
+        
         page.go('index');
       } else {
         showModal()
@@ -186,6 +187,7 @@ function checkUserValidation(user, users) {
   users.forEach(member => {
     if (member.email === user.email && member.password === user.password) {
       isValid = true;
+      storage.setUser({...member,...user});
     }
   });
 
