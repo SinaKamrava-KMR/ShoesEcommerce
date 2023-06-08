@@ -10,7 +10,8 @@ export class Product{
   colors = [];
   soldNumbers = 0;
   rate = 0;
-  viewers=0
+  viewers = 0;
+  brand = '';
 
   constructor(product) {
     this.id = product.id;
@@ -24,6 +25,7 @@ export class Product{
     this.soldNumbers = product.soldNumbers;
     this.rate = product.rate;
     this.viewers = product.viewers;
+    this.brand = product.brand;
   }
 
 

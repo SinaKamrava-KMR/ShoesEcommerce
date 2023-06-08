@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes Store</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+
+  <body class="w-screen h-screen flex flex-col md:flex-row-reverse overflow-y-scroll overflow-x-hidden gap-2 relative">
+
+    <span id="backbtn" class="text-2xl md:text-3xl z-20 text-dark-txt fixed top-5 left-5">
+      <i class="bi bi-arrow-left"></i>
+    </span>
+
+
+
+    <section id="product-slider"  class="product-slider">
+
+        <div id="slides-wrapper">
+          <div class="product-slide">
+            <div  class="w-[250px] h-[250px]">
+              <img draggable="false"  class="w-full h-full " src="../../assets/images/Rectangle11.png">
+            </div>
+          </div>
+          <div class="product-slide">
+            <div class="w-[250px] h-[250px]">
+              <img draggable="false"  class="w-full h-full " src="../../assets/images/Rectangle9.png">
+            </div>
+          </div>
+          <div class="product-slide">
+            <div class="w-[250px] h-[250px]">
+              <img draggable="false"  class="w-full h-full " src="../../assets/images/Rectangle10.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+            
+        </div>
+
+
+    </section>
+
+    <section class="flex-1 flex flex-col px-3 md:pl-5 md:mt-16 gap-3 md:justify-between">
+
+      <div class="flex justify-between">
+        <p class="text-xl font-bold text-dark-txt">Air Jordan 3 Retro</p>
+        <span id="like-btn"><i class="bi bi-heart text-xl"></i></span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-sm bg-gray-100 flex items-center gap-2 py-1 rounded-sm px-2 text-slate-700"><p>5.732</p> sold</span>
+        <i class="bi bi-star-half"></i>
+        <span class="flex items-center gap-2 text-slate-700">
+          <p>4.2</p>
+          <p>(5.231 reviews)</p>
+        </span>
+      </div>
+      
+      <hr>
+
+      <div class="flex flex-col gap-2">
+        <p class="text-dark-txt text-xl font-bold">Description</p>
+        <p class="line-clamp-2 text-ellipsis text-sm md:text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit rerum, accusantium iste necessitatibus hic voluptatem repudiandae quasi fugiat non.</p>
+      </div>
+
+      <div class="flex items-center gap-2">
+
+        <div class="flex-1 flex flex-col gap-2">
+          <p class="text-lg text-dark-txt font-bold">Size</p>
+          <div id="sizes" class="flex items-center gap-2 [&>span]:transition-all [&>span]:duration-200">
+              <span class="border border-dark-txt rounded-full px-2 py-1 cursor-pointer">
+                34
+              </span>
+              <span class="border border-dark-txt rounded-full px-2 py-1 cursor-pointer active-size">
+                45
+              </span>
+              <span class="border border-dark-txt rounded-full px-2 py-1 cursor-pointer">
+                54
+              </span>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-col gap-2 md:w-fit min-w-[200px]">
+          <p class="text-lg text-dark-txt font-bold">Colors</p>
+          <div id="colors" class="flex items-center gap-2 overflow-x-scroll">
+            <span class="text-xl cursor-pointer rounded-full px-2 py-1 bg-slate-300">
+              <i class="bi bi-check2"></i>
+            </span>
+            <span class="text-xl cursor-pointer rounded-full px-2 py-1 bg-yellow-300">
+              <i class="bi bi-check2 invisible"></i>
+            </span>
+            <span class="text-xl cursor-pointer rounded-full px-2 py-1 bg-orange-300">
+              <i class="bi bi-check2 invisible"></i>
+            </span>
+            <span class="text-xl cursor-pointer rounded-full px-2 py-1 bg-blue-400">
+              <i class="bi bi-check2 invisible"></i>
+            </span>
+            <span class="text-xl cursor-pointer rounded-full px-2 py-1 bg-green-300">
+              <i class="bi bi-check2 invisible"></i>
+            </span>
+            <span class="text-xl cursor-pointer rounded-full px-2 py-1 bg-red-400">
+              <i class="bi bi-check2 invisible"></i>
+            </span>
+        </div>
+        </div>
+
+
+      </div>
+
+      <div class="flex gap-5 items-center mt-3">
+          <p class="font-bold text-dark-txt">Quantity</p>
+          <div class="flex gap-3 bg-gray-200 rounded-full items-center px-4 py-1">
+            <span id="qnt-dec" class="text-xl cursor-pointer"><i class="bi bi-dash"></i></span>
+            <span id="Quantity-text">1</span>
+            <span id="qnt-inc" class="text-xl cursor-pointer"><i class="bi bi-plus"></i></span>
+            
+          </div>
+      </div>
+
+      <hr>
+
+      <div class="flex gap-6 items-center">
+        <div class="flex flex-col gap-2 py-5">
+          <small class="text-gray-500">Total price</small>
+          <p class="font-bold text-dark-txt text-xl">$240.00</p>
+        </div>
+
+        <button class="flex gap-3 text-white bg-black py-3 items-center justify-center rounded-full flex-1">
+          <i class="bi bi-bag-check-fill"></i>
+          <p>Add to cart</p>
+        </button>
+      </div>
+
+    </section>
+
+    <script type="module"  src="../scripts/components/productpage.js"></script>
+  </body>
+</html>

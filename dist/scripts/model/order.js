@@ -4,7 +4,8 @@ export class Order{
   productID = 0;
   color = '';
   size = 0;
-  state = 0;
+  status = 0;
+  count = 0;
   title = '';
   price = 0;
   paymentMethod = '';

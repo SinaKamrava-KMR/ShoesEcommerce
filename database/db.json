@@ -41,13 +41,105 @@
      }
     
     ],
-  "product": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "products": [
+    { 
+     "id": "653488d5-6b2a-4d73-8790-40f798cde049",
+     "images" : ["../../assets/images/Rectangle6.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle10.png","../../assets/images/Rectangle8.png"],
+     "tinyImage" : "../../assets/images/Rectangle6.png",
+     "title" :"Air Jordan 3 Retro",
+     "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+     "price" :123.4,
+     "sizes" : [24,32,45,46,52],
+     "colors" :["red","yellow","blue"],
+     "soldNumbers" : 120,
+     "rate" : 4.2,
+     "viewers" : 2345,
+     "brand" :"nike"
+    },
+    { 
+      "id": "bf24b7b0-f78a-4764-8e8e-03260488a874",
+      "images" : ["../../assets/images/Rectangle8.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle10.png","../../assets/images/Rectangle8.png"],
+      "tinyImage" : "../../assets/images/Rectangle6.png",
+      "title" :"Air Jordan 3 Retro",
+      "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price" :23.4,
+      "sizes" : [24,32,45,46,52],
+      "colors" :["red","yellow","blue"],
+      "soldNumbers" : 420,
+      "rate" : 3.2,
+      "viewers" : 2345,
+      "brand" :"adidas"
+     },
+     { 
+      "id": "da8e8dba-9be6-45ef-976b-1a2060ee272c",
+      "images" : ["../../assets/images/Rectangle9.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle10.png","../../assets/images/Rectangle8.png"],
+      "tinyImage" : "../../assets/images/Rectangle9.png",
+      "title" :"Air Jordan 3 Retro",
+      "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price" :73.4,
+      "sizes" : [14,42,45],
+      "colors" :["red","yellow","blue"],
+      "soldNumbers" : 420,
+      "rate" : 3.2,
+      "viewers" : 2345,
+      "brand" :"nike"
+     },
+     { 
+      "id": "0961892d-3539-4f8d-ac1f-ab1306a4eca3",
+      "images" : ["../../assets/images/Rectangle10.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle10.png","../../assets/images/Rectangle8.png"],
+      "tinyImage" : "../../assets/images/Rectangle10.png",
+      "title" :"Air Jordan 3 Retro",
+      "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price" :73.4,
+      "sizes" : [14,42,45],
+      "colors" :["red","yellow","blue"],
+      "soldNumbers" : 420,
+      "rate" : 3.2,
+      "viewers" : 2345,
+      "brand" :"puma"
+     },
+     { 
+      "id": "bbc58602-2bc6-4516-ab2e-523247dceed8",
+      "images" : ["../../assets/images/Rectangle7.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle10.png","../../assets/images/Rectangle8.png"],
+      "tinyImage" : "../../assets/images/Rectangle7.png",
+      "title" :"Air Jordan 3 Retro",
+      "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price" :737.4,
+      "sizes" : [43,42,45],
+      "colors" :["red","yellow","blue"],
+      "soldNumbers" : 420,
+      "rate" : 4.7,
+      "viewers" : 5345,
+      "brand" :"asics"
+     },
+     { 
+      "id": "b60bcbfe-5822-4b53-95ec-aacaa466312e",
+      "images" : ["../../assets/images/Rectangle8.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle7.png","../../assets/images/Rectangle8.png"],
+      "tinyImage" : "../../assets/images/Rectangle8.png",
+      "title" :"Air Jordan 3 Retro",
+      "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price" :98.1,
+      "sizes" : [41,42,45],
+      "colors" :["red","yellow","blue"],
+      "soldNumbers" : 620,
+      "rate" : 2.7,
+      "viewers" : 600,
+      "brand" :"reebok"
+     },
+     { 
+      "id": "154eaa26-6363-42f7-9594-057f4196007c",
+      "images" : ["../../assets/images/Rectangle7.png","../../assets/images/Rectangle11.png","../../assets/images/Rectangle10.png","../../assets/images/Rectangle8.png"],
+      "tinyImage" : "../../assets/images/Rectangle6.png",
+      "title" :"Air Jordan 3 Retro",
+      "description" :"In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price" :123.4,
+      "sizes" : [24,32,45,46,52],
+      "colors" :["red","yellow","blue"],
+      "soldNumbers" : 120,
+      "rate" : 4.2,
+      "viewers" : 2345,
+      "brand" :"nike"
+     }
+
   ]
 }
