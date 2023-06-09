@@ -8,7 +8,9 @@ module.exports = {
       gridTemplateColumns: {
         // added new 4 column grid as new4
         'mobile-responsive': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'main-mobile-responsive': 'repeat(auto-fit, minmax(150px, 1fr))',
         'responsive': 'repeat(auto-fit, minmax(400px, 1fr))',
+        
         },
       gridTemplateRows: {
         // added new 4 column grid as new4
