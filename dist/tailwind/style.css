@@ -16,6 +16,10 @@
     display: none;
   }
 
+  button{
+    cursor: pointer;
+  }
+
   
 }
 
@@ -134,7 +138,7 @@
   }
 
   .product{
-    @apply min-w-[150px] md:min-w-[250px]  flex-1 flex flex-col gap-2
+    @apply min-w-[150px] md:min-w-[250px]  flex-1 flex flex-col gap-2 relative
   }
 
   .product-slider{
@@ -161,8 +165,14 @@
     @apply !text-red-500 text-xl
   }
 
+  .card{
+    @apply bg-white shadow-lg shadow-slate-100 flex gap-4 rounded-3xl p-5 flex-1
+  }
 
- 
+
+  .active-order-state{
+    @apply !text-dark-txt
+  }
 
 
 
