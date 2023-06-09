@@ -5,6 +5,16 @@ module.exports = {
   purge: ['./dist/**/**/*.{html,js}'],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        // added new 4 column grid as new4
+        'mobile-responsive': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'responsive': 'repeat(auto-fit, minmax(400px, 1fr))',
+        },
+      gridTemplateRows: {
+        // added new 4 column grid as new4
+        'mobile-responsive': 'repeat(auto-fit, minmax(150px, 150px))',
+        'responsive': 'repeat(auto-fit, minmax(150px, 200px))',
+        },
       fontFamily: {
         'Lilita': ['Lilita One', 'cursive']
       },
