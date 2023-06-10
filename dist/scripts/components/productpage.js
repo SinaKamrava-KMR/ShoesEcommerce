@@ -31,9 +31,14 @@ let slidePosition = 0;
 let qntCount = 1;
 let productId = url.params('id');
 let productObj = [];
+let currentUser;
 (() => {
  
   getProductByID(productId);
+
+
+
+
 })();
 
 
@@ -68,11 +73,18 @@ qntInc.addEventListener('click', () => {
 like.addEventListener("click", () => {
   if (like.classList.contains('active-like')) {
     like.innerHTML = `<i class="bi bi-heart text-xl"></i>`
-    like.classList.remove('active-like')
+    like.classList.remove('active-like');
+    currentUser.wishlists.forEach((id,index) => {
+      if (productId == id) {
+        currentUser.wishlists.splice(index, 1);
+        updateUser();
+      }
+    })
   } else {
     like.classList.add('active-like')
-    like.innerHTML =`<i class="bi bi-heart-fill"></i>`
-    
+    like.innerHTML = `<i class="bi bi-heart-fill"></i>`;
+    currentUser.wishlists.push(productId);
+    updateUser();
   }
 })
 
@@ -92,7 +104,7 @@ buyBtn.addEventListener("click", () => {
     count:qntCount,
     title:productTitle.textContent,
     price:productObj.price,
-    totalPrice:(parseFloat(productTotalPrice.textContent)*qntCount).toFixed(2),
+    totalPrice:(parseFloat(productTotalPrice.textContent)).toFixed(2),
     paymentMethod:'',
     shippingAddress:''
   }
@@ -114,6 +126,14 @@ buyBtn.addEventListener("click", () => {
 
   
 })
+
+function updateUser() {
+  const user = { ...currentUser };
+  request.update('users',user).then(result => {
+    console.log("update user");
+  })
+}
+
 function touchHandel() {
   let xUp, xDown;
   
@@ -239,7 +259,21 @@ function getProductByID(id) {
     productObj = new Product(result[0])
     insertData(productObj);
    
+  });
+
+  let userId = storage.getUser().id;
+  console.log(userId);
+  request.getById('users', userId).then(result => {
+    currentUser = result[0];
+    currentUser.wishlists.forEach(productId => {
+      if (productId == productObj.id) {
+        like.classList.add('active-like')
+        like.innerHTML = `<i class="bi bi-heart-fill"></i>`
+        return
+      }
+    })
   })
+  
 
 }
 

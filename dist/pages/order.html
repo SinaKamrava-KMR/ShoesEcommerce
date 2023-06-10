@@ -42,7 +42,7 @@
     </section>
 
 
-    <section class=" flex flex-1 flex-col items-center justify-center gap-2 hidden">
+    <section id="empty-state-part" class=" flex flex-1 flex-col items-center justify-center gap-2 hidden">
       <div class="w-[200px] h-[200px]  overflow-hidden -translate-y-10 ">
         <img class="w-full h-full object-cover" src="../../assets/images/empty.png" >
       </div>
@@ -51,159 +51,11 @@
       <p class="text-gray-500 text-sm">you don't have an active orders at this time</p>
   </section>
 
-    <main class=" grid gap-2 grid-cols-mobile-responsive grid-rows-mobile-responsive sm:grid-rows-responsive sm:grid-cols-responsive overflow-y-scrol pb-32 pt-2 ">
+    <main id="orders-cards-wrapper" class=" grid gap-2 grid-cols-mobile-responsive grid-rows-mobile-responsive sm:grid-rows-responsive sm:grid-cols-responsive overflow-y-scrol pb-32 pt-2 ">
      
 
 
-      <div class="card h-[140px] md:h-fit p-2 md:p-4">
-        <div class="bg-gray-100 rounded-2xl p-2 ">
-          <img class="w-full h-full object-contain" src="../../assets/images/Rectangle10.png">
-        </div>
-        <div class="flex-1 flex flex-col gap-1 justify-between">
-          <div class="flex justify-between items-center text-lg">
-            <p class="text-dark-txtfont-semibold text-ellipsis line-clamp-1 ">Air Jordan 3 Retro Air Jordan 3 Retro</p>
-           
-          </div>
-          <div class="flex gap-2 text-sm text-gray-500 items-center">
-            <span class="bg-slate-800 w-4 h-4 md:w-6 md:h-6 rounded-full"></span>
-            <p>black</p>
-            <span class="h-5 w-[1px] bg-gray-300"></span>
-            <p>Size = <span>43</span></p>
-            <span class="h-5 w-[1px] bg-gray-300"></span>
-            <p>Qty = <span>1</span></p>
-          </div>
 
-          <div class="bg-gray-100 w-fit px-3 py-1 text-sm text-slate-600 rounded-lg">In Delivery</div>
-          <div class="flex items-center justify-between text-dark-txt">
-            <p class="text-lg md:text-xl font-semibold">$<span>105.00</span></p>
-            <div class="bg-black text-white flex items-center rounded-full px-3 py-1">
-              
-              <p class="text-sm">Track Order</p>
-              
-            </div>
-          </div>
-        </div>
-     </div>
-
-         <div class="card h-[140px] md:h-fit p-2 md:p-4">
-      <div class="bg-gray-100 rounded-2xl p-2 ">
-        <img class="w-full h-full object-contain" src="../../assets/images/Rectangle10.png">
-      </div>
-      <div class="flex-1 flex flex-col gap-1 justify-between">
-        <div class="flex justify-between items-center text-lg">
-          <p class="text-dark-txtfont-semibold text-ellipsis line-clamp-1 ">Air Jordan 3 Retro Air Jordan 3 Retro</p>
-         
-        </div>
-        <div class="flex gap-2 text-sm text-gray-500 items-center">
-          <span class="bg-slate-800 w-4 h-4 md:w-6 md:h-6 rounded-full"></span>
-          <p>black</p>
-          <span class="h-5 w-[1px] bg-gray-300"></span>
-          <p>Size = <span>43</span></p>
-          <span class="h-5 w-[1px] bg-gray-300"></span>
-          <p>Qty = <span>1</span></p>
-        </div>
-
-        <div class="bg-gray-100 w-fit px-3 py-1 text-sm text-slate-600 rounded-lg">In Delivery</div>
-        <div class="flex items-center justify-between text-dark-txt">
-          <p class="text-lg md:text-xl font-semibold">$<span>105.00</span></p>
-          <div class="bg-black text-white flex items-center rounded-full px-3 py-1">
-            
-            <p class="text-sm">Track Order</p>
-            
-          </div>
-        </div>
-      </div>
-         </div>
-
-         <div class="card h-[140px] md:h-fit p-2 md:p-4">
-          <div class="bg-gray-100 rounded-2xl p-2 ">
-            <img class="w-full h-full object-contain" src="../../assets/images/Rectangle10.png">
-          </div>
-          <div class="flex-1 flex flex-col gap-1 justify-between">
-            <div class="flex justify-between items-center text-lg">
-              <p class="text-dark-txtfont-semibold text-ellipsis line-clamp-1 ">Air Jordan 3 Retro Air Jordan 3 Retro</p>
-             
-            </div>
-            <div class="flex gap-2 text-sm text-gray-500 items-center">
-              <span class="bg-slate-800 w-4 h-4 md:w-6 md:h-6 rounded-full"></span>
-              <p>black</p>
-              <span class="h-5 w-[1px] bg-gray-300"></span>
-              <p>Size = <span>43</span></p>
-              <span class="h-5 w-[1px] bg-gray-300"></span>
-              <p>Qty = <span>1</span></p>
-            </div>
-  
-            <div class="bg-gray-100 w-fit px-3 py-1 text-sm text-slate-600 rounded-lg">In Delivery</div>
-            <div class="flex items-center justify-between text-dark-txt">
-              <p class="text-lg md:text-xl font-semibold">$<span>105.00</span></p>
-              <div class="bg-black text-white flex items-center rounded-full px-3 py-1">
-                
-                <p class="text-sm">Track Order</p>
-                
-              </div>
-            </div>
-          </div>
-         </div>
-  
-         <div class="card h-[140px] md:h-fit p-2 md:p-4">
-        <div class="bg-gray-100 rounded-2xl p-2 ">
-          <img class="w-full h-full object-contain" src="../../assets/images/Rectangle10.png">
-        </div>
-        <div class="flex-1 flex flex-col gap-1 justify-between">
-          <div class="flex justify-between items-center text-lg">
-            <p class="text-dark-txtfont-semibold text-ellipsis line-clamp-1 ">Air Jordan 3 Retro Air Jordan 3 Retro</p>
-           
-          </div>
-          <div class="flex gap-2 text-sm text-gray-500 items-center">
-            <span class="bg-slate-800 w-4 h-4 md:w-6 md:h-6 rounded-full"></span>
-            <p>black</p>
-            <span class="h-5 w-[1px] bg-gray-300"></span>
-            <p>Size = <span>43</span></p>
-            <span class="h-5 w-[1px] bg-gray-300"></span>
-            <p>Qty = <span>1</span></p>
-          </div>
-  
-          <div class="bg-gray-100 w-fit px-3 py-1 text-sm text-slate-600 rounded-lg">In Delivery</div>
-          <div class="flex items-center justify-between text-dark-txt">
-            <p class="text-lg md:text-xl font-semibold">$<span>105.00</span></p>
-            <div class="bg-black text-white flex items-center rounded-full px-3 py-1">
-              
-              <p class="text-sm">Track Order</p>
-              
-            </div>
-          </div>
-        </div>
-         </div>
-
-         <div class="card h-[140px] md:h-fit p-2 md:p-4">
-            <div class="bg-gray-100 rounded-2xl p-2 ">
-              <img class="w-full h-full object-contain" src="../../assets/images/Rectangle10.png">
-            </div>
-            <div class="flex-1 flex flex-col gap-1 justify-between">
-              <div class="flex justify-between items-center text-lg">
-                <p class="text-dark-txtfont-semibold text-ellipsis line-clamp-1 ">Air Jordan 3 Retro Air Jordan 3 Retro</p>
-               
-              </div>
-              <div class="flex gap-2 text-sm text-gray-500 items-center">
-                <span class="bg-slate-800 w-4 h-4 md:w-6 md:h-6 rounded-full"></span>
-                <p>black</p>
-                <span class="h-5 w-[1px] bg-gray-300"></span>
-                <p>Size = <span>43</span></p>
-                <span class="h-5 w-[1px] bg-gray-300"></span>
-                <p>Qty = <span>1</span></p>
-              </div>
-      
-              <div class="bg-gray-100 w-fit px-3 py-1 text-sm text-slate-600 rounded-lg">In Delivery</div>
-              <div class="flex items-center justify-between text-dark-txt">
-                <p class="text-lg md:text-xl font-semibold">$<span>105.00</span></p>
-                <div class="bg-black text-white flex items-center rounded-full px-3 py-1">
-                  
-                  <p class="text-sm">Track Order</p>
-                  
-                </div>
-              </div>
-            </div>
-         </div>
 
     </main>
   

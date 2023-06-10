@@ -64,6 +64,25 @@ export class Request{
     }
   }
 
+  async update(endpoint,data) {
+    try {
+      const response = await fetch(`${this.baseUrl}${endpoint}/${data.id}`, {
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+          'content-type': 'application/json'
+        }
+      });
+      if (!response.ok) throw new Error('can not post producy !!!');
+
+      const result = await response.json();
+      return result;
+
+    } catch (error) {
+      throw error;
+    }
+  }
+
   async delete(endpoint,id) {
     try {
       const response = await fetch(`${this.baseUrl}${endpoint}/${id}`, {
@@ -81,5 +100,17 @@ export class Request{
       throw error;
     }
   }
+
+  async getQueues(endpoint, IdList) {
+    
+    let listOfResults = [];
+    for (let i = 0; i < IdList.length; i++) {
+      let card = await this.getById(endpoint,IdList[i]);
+      listOfResults.push(card[0]);
+    }
+
+    return listOfResults;
+  } 
+
 
 }

@@ -28,4 +28,24 @@ export class Order{
     this.paymentMethod = order.paymentMethod;
     this.shippingAddress = order.shippingAddress;
   }
+
+
+  statusTxt() {
+    if (this.status == 'active') {
+      return "In Delivery"
+    } else if (this.status == "complete") {
+      return "Complete"
+    } else {
+      return "off"
+    }
+  }
+
+  cardBtnTxt() {
+    if (this.status == 'active') {
+      return "Track Order"
+    } else if (this.status == "complete") {
+      return "Buy Again"
+    }
+  }
+
 }

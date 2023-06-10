@@ -11,6 +11,7 @@ const navigation = document.querySelectorAll('.navigation span');
 const categories = document.querySelectorAll('.categories .category');
 const brands = document.querySelectorAll('.brands .brand');
 const seeAllBtn = document.getElementById('seeAllBtn');
+const likedProducts = document.getElementById('liked-products');
 const products = document.querySelectorAll('.products .product')
 let headerPosition = 0;
 addEventListener("scroll", (event) => {
@@ -114,6 +115,10 @@ function brandPage() {
 
 seeAllBtn.addEventListener('click', () => {
   page.go('popular')
+});
+
+likedProducts.addEventListener('click', () => {
+  page.go('wishlist')
 })
 
 // products.forEach(product => {
