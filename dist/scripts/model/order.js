@@ -2,12 +2,14 @@ export class Order{
   id = 0;
   userID = 0;
   productID = 0;
+  image=''
   color = '';
   size = 0;
   status = "";
   count = 0;
   title = '';
   price = 0;
+  totalPrice = 0;
   paymentMethod = '';
   shippingAddress = '';
 
@@ -17,9 +19,11 @@ export class Order{
     this.productID =order.productId;
     this.color = order.color;
     this.size = order.size;
+    this.image = order.image;
     this.status = order.status;
     this.count = order.count;
     this.title = order.title;
+    this.totalPrice = order.totalPrice;
     this.price = order.price;
     this.paymentMethod = order.paymentMethod;
     this.shippingAddress = order.shippingAddress;

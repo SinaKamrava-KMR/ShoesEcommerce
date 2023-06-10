@@ -66,10 +66,10 @@ export class Request{
 
   async delete(endpoint,id) {
     try {
-      const response = await fetch(`${this.baseUrl}${endpoint}?id=${id}`, {
+      const response = await fetch(`${this.baseUrl}${endpoint}/${id}`, {
         method: "DELETE",
         headers: {
-          'content-type': 'application/json'
+          'content-type': 'text/plain'
         }
       });
       if (!response.ok) throw new Error('can not post producy !!!');

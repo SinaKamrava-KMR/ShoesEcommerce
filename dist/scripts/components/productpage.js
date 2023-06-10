@@ -30,6 +30,7 @@ const buyBtn = document.getElementById('buyBtn');
 let slidePosition = 0;
 let qntCount = 1;
 let productId = url.params('id');
+let productObj = [];
 (() => {
  
   getProductByID(productId);
@@ -54,11 +55,13 @@ qntDec.addEventListener('click', () => {
     qntCount = 1;
     return;
   };
+  productTotalPrice.textContent = (productObj.price * qntCount).toFixed(2)
   qntTxt.textContent = qntCount;
 })
 
 qntInc.addEventListener('click', () => {
   qntCount++;
+  productTotalPrice.textContent = (productObj.price * qntCount).toFixed(2)
   qntTxt.textContent = qntCount;
 })
 
@@ -76,17 +79,20 @@ like.addEventListener("click", () => {
 
 buyBtn.addEventListener("click", () => {
 
-  let userId =storage.getUser().id
+  let userId = storage.getUser().id;
+  // console.log(productObj);
   const cart = {
     id:'',
     userId:userId,
     productId:productId,
     color:chooseColor,
-    size:chooseSize,
+    size: chooseSize,
+    image: productObj.images[0],
     status:"non-active",
     count:qntCount,
     title:productTitle.textContent,
-    price:productTotalPrice.textContent,
+    price:productObj.price,
+    totalPrice:(parseFloat(productTotalPrice.textContent)*qntCount).toFixed(2),
     paymentMethod:'',
     shippingAddress:''
   }
@@ -229,8 +235,9 @@ function resetSizes() {
 
 function getProductByID(id) {
   request.getById('products', id).then(result => {
-   
-    insertData(new Product(result[0]))
+    console.log(result[0]);
+    productObj = new Product(result[0])
+    insertData(productObj);
    
   })
 
