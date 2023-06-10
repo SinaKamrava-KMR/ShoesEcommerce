@@ -26,7 +26,7 @@ function getCards() {
     data.forEach(item => {
       
       if (item.status == 'non-active') {
-        sumPrice += parseFloat(item.price);
+        sumPrice += parseFloat(item.totalPrice);
         cards.push(new Order(item))
         cardsContainer.innerHTML += generateCard(new Order(item));
       }
@@ -146,6 +146,7 @@ window.handelDec = (e) => {
     card.totalPrice = (card.count * card.price).toFixed(2);
     price.textContent = (card.totalPrice);
     txtElm.textContent = card.count;
+    handelSumPrices();
   } else {
     card.count = 1;
   }
@@ -163,9 +164,16 @@ window.handelInc = (e) => {
   card.totalPrice = (card.count * card.price).toFixed(2)
   price.textContent = (card.totalPrice);
   txtElm.textContent = card.count;
+  handelSumPrices();
 }
 
-
+function handelSumPrices() {
+  sumPrice = 0;
+  cards.forEach(card => {
+    sumPrice += parseFloat(card.totalPrice)
+  });
+  totalprice.textContent = sumPrice.toFixed(2);
+}
 
 function findCard(orderId) {
   let card =0
