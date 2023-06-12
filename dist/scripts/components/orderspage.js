@@ -13,7 +13,11 @@ const activeState = document.getElementById('active-state');
 const compliteState = document.getElementById('complite-state');
 const cardsWapper = document.getElementById('orders-cards-wrapper');
 const emptyStatePart = document.getElementById('empty-state-part');
+const searchbtn = document.getElementById('searchbtn');
 
+searchbtn.addEventListener("click", () => {
+  page.go('search',{key:'page',value:'order'})
+})
 
 handelNavigationEvents()
 initOrderState()

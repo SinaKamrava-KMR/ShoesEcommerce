@@ -15,6 +15,11 @@ const cancelBtn = document.getElementById('cancel-btn');
 const checkoutBtn = document.getElementById('checkoutBtn');
 const removeCardBtn = document.getElementById('remove-card-btn');
 const removeCardContainer = document.getElementById('remove-card-container');
+const searchbtn = document.getElementById('searchbtn');
+
+searchbtn.addEventListener("click", () => {
+  page.go('search',{key:'page',value:'cart'})
+})
 
 const cards = [];
 handelNavigationEvents()

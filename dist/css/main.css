@@ -1187,6 +1187,18 @@ button{
   top: 1.25rem;
 }
 
+.top-3 {
+  top: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1214,6 +1226,22 @@ button{
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
 }
 
 .line-clamp-1 {
@@ -1315,6 +1343,10 @@ button{
   height: 100vh;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .min-h-\[100px\] {
   min-height: 100px;
 }
@@ -1384,8 +1416,16 @@ button{
   width: 100vw;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .min-w-\[200px\] {
   min-width: 200px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-1 {
@@ -1505,6 +1545,10 @@ button{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.grid-cols-responsive {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
 .grid-rows-mobile-responsive {
   grid-template-rows: repeat(auto-fit, minmax(150px, 150px));
 }
@@ -1581,6 +1625,10 @@ button{
   text-overflow: ellipsis;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1599,6 +1647,18 @@ button{
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-t-3xl {
@@ -1655,6 +1715,26 @@ button{
 .border-slate-800 {
   --tw-border-opacity: 1;
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
+}
+
+.border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
+.border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1774,6 +1854,10 @@ button{
   padding: 0.75rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1817,6 +1901,16 @@ button{
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-20 {
@@ -1955,6 +2049,11 @@ button{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .accent-dark-txt {
   accent-color: #152536;
 }
@@ -2001,6 +2100,16 @@ button{
   transition-duration: 300ms;
 }
 
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .hover\:text-slate-900:hover {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
@@ -2039,6 +2148,11 @@ button{
 
   .md\:top-0 {
     top: 0px;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:mt-16 {
@@ -2081,6 +2195,22 @@ button{
 
   .md\:max-w-\[400px\] {
     max-width: 400px;
+  }
+
+  .md\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .md\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
+  .md\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
   }
 
   .md\:grow-0 {

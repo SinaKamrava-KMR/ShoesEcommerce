@@ -1,8 +1,10 @@
 import { Request } from "./services/request.js";
 import { Page } from "./utilities/page.js";
+import { Catch } from "./utilities/catch.js";
 import { Product } from "./model/product.js";
 
 const page = new Page()
+const storage = new Catch()
 const request = new Request('http://localhost:3000/')
 const productsContainer = document.getElementById("products");
 const searchWrapper = document.getElementById('search-wrapper');
@@ -12,7 +14,22 @@ const categories = document.querySelectorAll('.categories .category');
 const brands = document.querySelectorAll('.brands .brand');
 const seeAllBtn = document.getElementById('seeAllBtn');
 const likedProducts = document.getElementById('liked-products');
-const products = document.querySelectorAll('.products .product')
+const homesearchinput = document.getElementById('homesearchinput');
+const products = document.querySelectorAll('.products .product');
+
+(() => {
+
+  let user = storage.getUser();
+  console.log(user);
+  if (user == undefined) {
+    page.go('login')
+  }
+  
+})()
+
+
+
+
 let headerPosition = 0;
 addEventListener("scroll", (event) => {
 
@@ -29,6 +46,10 @@ addEventListener("scroll", (event) => {
   }   
 
 });
+
+homesearchinput.addEventListener("focusin", () => {
+  page.go('search',{key:'page',value:'home'})
+})
 
 getProducts()
 initCategories()
