@@ -3,7 +3,7 @@ import { Page } from "./utilities/page.js";
 import { Product } from "./model/product.js";
 
 const page = new Page()
-const request = new Request('http://localhost:3000/')
+const request = new Request('http://localhost:3000/');
 const productsContainer = document.getElementById("products");
 const searchWrapper = document.getElementById('search-wrapper');
 const header = document.getElementById('header');

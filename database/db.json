@@ -8,18 +8,19 @@
       "password": "123",
       "addresses": {
         "home": "tonekabon,mazandaran,22",
-        "office": ",ramsar,mazandaran,45"
+        "office": ",ramsar,mazandaran,45",
+        "appartment": "338 Terra Cotta Street"
       },
       "ordersID": [
         "e69e75dc-4a12-46ed-8482-2ac01cbed21c",
-        "bf24b7b0-f78a-4764-8e8e-03260488a874"
+        "7e28f42c-596e-420b-9afe-7269f0095551"
       ],
       "wishlists": [
-        "653488d5-6b2a-4d73-8790-40f798cde049",
-        "da8e8dba-9be6-45ef-976b-1a2060ee272c",
-        "bbc58602-2bc6-4516-ab2e-523247dceed8",
-        "0961892d-3539-4f8d-ac1f-ab1306a4eca3"
-      ]
+        "f6cec550-903a-4ab8-8ed8-f0f595a986f8",
+        "09f87817-f3e2-411d-af1b-91b64dd51926"
+      ],
+      "remember": "on",
+      "checkout": "off"
     },
     {
       "id": "a137dd66-7109-42e6-bb60-19b83da4b469",
