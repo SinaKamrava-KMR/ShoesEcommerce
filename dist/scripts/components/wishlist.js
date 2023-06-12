@@ -20,6 +20,11 @@ let productUser;
 const categories = document.querySelectorAll('.categories .category');
 const back = document.getElementById('backbtn');
 const productsContainer = document.getElementById("products");
+const searchbtn = document.getElementById("searchbtn");
+
+searchbtn.addEventListener("click", () => {
+  page.go('search',{key:'page',value:'wishlist'})
+})
 
 initCategories()
 

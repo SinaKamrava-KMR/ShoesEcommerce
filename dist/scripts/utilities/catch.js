@@ -45,4 +45,12 @@ export class Catch{
     this.#setItem(key,value)
   }
 
+  geHistory() {
+    const store = localStorage.getItem('recent') || '[]';
+    return JSON.parse(store);
+  }
+  setHistory(value) {
+    localStorage.setItem('recent', JSON.stringify(value));
+  }
+
 }
