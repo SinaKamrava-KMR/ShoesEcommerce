@@ -1270,8 +1270,8 @@ button{
   height: 120px;
 }
 
-.h-\[140px\] {
-  height: 140px;
+.h-\[130px\] {
+  height: 130px;
 }
 
 .h-\[150px\] {
@@ -1313,10 +1313,6 @@ button{
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[130px\] {
-  height: 130px;
 }
 
 .min-h-\[100px\] {
@@ -1691,6 +1687,11 @@ button{
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .bg-green-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
@@ -1753,16 +1754,6 @@ button{
 .bg-yellow-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .object-contain {
