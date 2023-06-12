@@ -178,6 +178,10 @@
     @apply fixed inset-0 flex flex-col md:justify-center md:items-center justify-end
   }
 
+  .pinModal{
+    @apply fixed inset-0 flex flex-col justify-center items-center
+  }
+
 
 
 }

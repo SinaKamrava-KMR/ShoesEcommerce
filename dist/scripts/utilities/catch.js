@@ -37,4 +37,12 @@ export class Catch{
     this.#setItem('user', user);
   }
 
+
+  get(key) {
+   return this.#getItem(key)[0]
+  }
+  set(key,value) {
+    this.#setItem(key,value)
+  }
+
 }

@@ -105,8 +105,11 @@ export class Request{
     
     let listOfResults = [];
     for (let i = 0; i < IdList.length; i++) {
-      let card = await this.getById(endpoint,IdList[i]);
-      listOfResults.push(card[0]);
+      let card = await this.getById(endpoint, IdList[i]);
+      if (card[0] != undefined) {
+        listOfResults.push(card[0]);
+        
+      }
     }
 
     return listOfResults;
