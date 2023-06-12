@@ -249,7 +249,7 @@ function insertData(list) {
     });
   } else {
     list.forEach(item => {
-      if (item.userId == currentUserId) {
+      if (item.userID == currentUserId) {
         if (pageFrom == "order" && item.status !="non-active") {
           resultWrapper.innerHTML += generateOrdersCard(new Order(item))
         } else if(pageFrom == "cart" && item.status =="non-active"){

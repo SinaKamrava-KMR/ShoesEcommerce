@@ -35,7 +35,7 @@ payBtn.addEventListener("click", () => {
 
 viewOrder.addEventListener("click", () => {
   updateOrders()
-  page.go('order');
+  
 });
 
 
@@ -49,10 +49,10 @@ async function updateOrders() {
 
   for (const cart of list) {
     let result = await updateProduct(cart)
-    console.log("order updated");
+    console.log(cart);
   };
 
-  
+  page.go('order');
  
 
 }
@@ -61,14 +61,16 @@ async function updateOrders() {
 async function getNonActiveCarts() {
   let list = [];
   let result = await request.getByFilter('orders', userId);
+  console.log(result);
   result.forEach(item => {
+  console.log(new Order(item));
     if (item.status == 'non-active') {
       list.push(new Order(item))
     }
     
   });
 
-
+  console.log(list);
   return list
   
 
@@ -76,5 +78,6 @@ async function getNonActiveCarts() {
 
 
 async function updateProduct(order) {
+  console.log(order);
  return await request.update('orders', order);
 }

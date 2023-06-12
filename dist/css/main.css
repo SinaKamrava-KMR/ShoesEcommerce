@@ -1172,6 +1172,10 @@ button{
   left: 0.5rem;
 }
 
+.left-3 {
+  left: 0.75rem;
+}
+
 .left-5 {
   left: 1.25rem;
 }
@@ -1184,6 +1188,10 @@ button{
   right: 0.5rem;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1192,20 +1200,16 @@ button{
   top: 0.5rem;
 }
 
-.top-5 {
-  top: 1.25rem;
-}
-
 .top-3 {
   top: 0.75rem;
 }
 
-.right-3 {
-  right: 0.75rem;
+.top-5 {
+  top: 1.25rem;
 }
 
-.left-3 {
-  left: 0.75rem;
+.z-0 {
+  z-index: 0;
 }
 
 .z-10 {
@@ -1229,20 +1233,16 @@ button{
   margin-bottom: 0.5rem;
 }
 
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mt-14 {
@@ -1253,8 +1253,8 @@ button{
   margin-top: 5rem;
 }
 
-.-mt-10 {
-  margin-top: -2.5rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .line-clamp-1 {
@@ -1281,10 +1281,6 @@ button{
 
 .hidden {
   display: none;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .h-14 {
@@ -1368,10 +1364,6 @@ button{
   height: 100vh;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
 .min-h-\[100px\] {
   min-height: 100px;
 }
@@ -1380,12 +1372,12 @@ button{
   width: 50%;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-4 {
   width: 1rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-5 {
@@ -1453,16 +1445,13 @@ button{
   width: 100vw;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .min-w-\[200px\] {
   min-width: 200px;
 }
 
-.max-w-full {
-  max-width: 100%;
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .flex-1 {
@@ -1646,10 +1635,6 @@ button{
   align-self: center;
 }
 
-.justify-self-center {
-  justify-self: center;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1678,8 +1663,8 @@ button{
   border-radius: 1rem;
 }
 
-.rounded-\[50px\] {
-  border-radius: 50px;
+.rounded-\[30px\] {
+  border-radius: 30px;
 }
 
 .rounded-full {
@@ -1700,14 +1685,6 @@ button{
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
 }
 
 .rounded-t-3xl {
@@ -1761,6 +1738,16 @@ button{
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
 .border-slate-100 {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
@@ -1774,26 +1761,6 @@ button{
 .border-slate-800 {
   --tw-border-opacity: 1;
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
-}
-
-.border-gray-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity));
-}
-
-.border-gray-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(17 24 39 / var(--tw-border-opacity));
-}
-
-.border-gray-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1913,8 +1880,9 @@ button{
   padding: 0.75rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -1977,14 +1945,9 @@ button{
   padding-bottom: 1.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .pb-20 {
@@ -2138,9 +2101,13 @@ button{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
+.text-yellow-400 {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.accent-black {
+  accent-color: #000;
 }
 
 .accent-dark-txt {
@@ -2197,11 +2164,6 @@ button{
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-100:hover {
@@ -2320,20 +2282,12 @@ button{
     max-width: 400px;
   }
 
-  .md\:max-w-\[\] {
-    max-width: ;
-  }
-
-  .md\:max-w-\[500px\] {
-    max-width: 500px;
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
   }
 
   .md\:max-w-\[600px\] {
     max-width: 600px;
-  }
-
-  .md\:max-w-\[60\%\] {
-    max-width: 60%;
   }
 
   .md\:grow-0 {

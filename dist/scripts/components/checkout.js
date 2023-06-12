@@ -35,10 +35,11 @@ const paymentBtn = document.getElementById("paymentBtn");
 const cards = [];
 let promo = 0;
 let sumPrice = 0;
+let userId = 0;
 
 (() => {
   getShippingMethod();
-
+  userId = storage.getUser().id;
   // let urlAddress = url.params("address");
 
   let userCurrentAddress = storage.get('address');
@@ -75,7 +76,10 @@ shippingAddress.addEventListener("click", () => {
 paymentBtn.addEventListener("click", () => {
   storage.set("shipping", "");
   storage.set("address", "");
-  page.go('payment');
+  console.log(cards);
+
+  updateCart(cards);
+  
 });
 
 modalBg.addEventListener("click", () => {
@@ -170,7 +174,10 @@ function getCards() {
     data.forEach((item) => {
       if (item.status == "non-active") {
         sumPrice += parseFloat(item.totalPrice);
-        cards.push(new Order(item));
+        
+        let newOrder = new Order(item);
+        console.log(newOrder);
+        cards.push(newOrder);
         orderListwrapper.innerHTML += generateCard(new Order(item));
       }
     });
@@ -222,6 +229,17 @@ function generateCard(card) {
 
 //   return addresses;
 // }
+async function updateCart(list) {
+
+  for (const order of list) {
+    let orderObj = { ...order };
+    console.log(orderObj);
+    await request.update("orders", orderObj);
+  }
+  
+  page.go('payment');
+  
+}
 
 function uppercaseFirstChr(str) {
   let list = [...str];

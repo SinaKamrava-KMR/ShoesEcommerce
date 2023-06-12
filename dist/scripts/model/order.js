@@ -15,8 +15,8 @@ export class Order{
 
   constructor(order) {
     this.id = order.id;
-    this.userID = order.userId;
-    this.productID =order.productId;
+    this.userID = order.userID ??order.userId;
+    this.productID =order.productID ??order.productId;
     this.color = order.color;
     this.size = order.size;
     this.image = order.image;
