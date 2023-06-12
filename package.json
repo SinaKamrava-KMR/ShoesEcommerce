@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind":"npx tailwindcss -i ./dist/tailwind/style.css -o ./dist/css/main.css --watch",
-    "api":"json-server --watch ./database/db.json"
+    "tailwind": "npx tailwindcss -i ./dist/tailwind/style.css -o ./dist/css/main.css --watch",
+    "api": "json-server --watch ./database/db.json"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "swiper": "^9.3.2"
   }
 }

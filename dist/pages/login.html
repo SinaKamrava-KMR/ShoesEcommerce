@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="w-screen h-screen">
+
+  <main class="w-full h-full flex flex-col gap-8 items-center justify-start relative">
+    <div class="login-modal">
+        user not found !!!
+    </div>
+
+      <div class="back-icon">
+        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9998 7.00029C16.9998 7.2655 16.8945 7.51986 16.7069 7.70739C16.5194 7.89493 16.2651 8.00029 15.9998 8.00029H4.41383L8.70783 12.2923C8.80081 12.3853 8.87456 12.4956 8.92488 12.6171C8.9752 12.7386 9.0011 12.8688 9.0011 13.0003C9.0011 13.1318 8.9752 13.262 8.92488 13.3835C8.87456 13.5049 8.80081 13.6153 8.70783 13.7083C8.61486 13.8013 8.50448 13.875 8.383 13.9253C8.26152 13.9757 8.13132 14.0015 7.99983 14.0015C7.86835 14.0015 7.73815 13.9757 7.61667 13.9253C7.49519 13.875 7.38481 13.8013 7.29183 13.7083L1.29183 7.70829C1.19871 7.6154 1.12482 7.50504 1.07441 7.38355C1.024 7.26206 0.998047 7.13182 0.998047 7.00029C0.998047 6.86875 1.024 6.73851 1.07441 6.61702C1.12482 6.49553 1.19871 6.38518 1.29183 6.29229L7.29183 0.292287C7.47961 0.104514 7.73428 -0.000976562 7.99983 -0.000976562C8.26539 -0.000976562 8.52006 0.104514 8.70783 0.292287C8.89561 0.48006 9.0011 0.734735 9.0011 1.00029C9.0011 1.26584 8.89561 1.52051 8.70783 1.70829L4.41383 6.00029H15.9998C16.2651 6.00029 16.5194 6.10564 16.7069 6.29318C16.8945 6.48072 16.9998 6.73507 16.9998 7.00029Z" fill="black"/>
+          </svg>
+      </div>
+
+      <div class="dark-logo-wrapper">
+        <img src="../../assets/icons/logo.png" alt="shoea logo">
+      </div>
+
+      <p class="w-full text-center font-bold text-dark-txt text-3xl">Login to Your Account</p>
+
+
+      <form class="login-form">
+        <div class="inputs-wrapper">
+          <div class="login-input">
+            <span id="email-icon" class="text-gray-400">
+              <i class="bi bi-envelope-fill"></i>
+            </span>
+            <input id="login-email" required class="outline-none border-0 flex-1 bg-transparent" placeholder="Email" type="email" autocomplete="off">
+
+            <small id="email-error" class="text-red-500 absolute left-2 -bottom-5 hidden">email is incorrect ! try again</small>
+          </div>
+
+          <div class="login-input">
+            <span id="password-icon" class="text-gray-400">
+              <i class="bi bi-lock-fill"></i> 
+            </span>
+            <input required id="login-password" class="border-0 outline-none flex-1 bg-transparent" placeholder="password" type="password" autocomplete="off" >
+            
+            <span class="cursor-pointer z-20 text-slate-600" id="show-pass">
+              <i class="bi bi-eye-slash-fill"></i>
+            </span>
+
+            <small id="password-error" class="text-red-500 absolute left-2 -bottom-5 hidden">password is incorrect ! try again</small>
+          </div>
+
+  
+          <div class="flex gap-2 items-center">
+            <input id="login-Remember" class="accent-dark-txt" name="login-check" type="checkbox">
+            <label for="login-check" class="text-sm text-gray-600">
+              Remember me
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" id="login-btn" class="next-btn py-2 deactive-btn">sign in</button>
+      </form>
+
+  </main>
+  
+  
+
+  <script type="module" src="../scripts/components/login.js"></script>
+</body>
+</html>
