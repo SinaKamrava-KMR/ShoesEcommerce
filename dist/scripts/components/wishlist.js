@@ -61,7 +61,7 @@ back.addEventListener('click', () => {
 
 function getWishlists(IDList) {
   request.getQueues("products", IDList).then(result => {
-    // console.log(result);
+    console.log(result);
     userWishlist = result;
     insertData(result);
   })
