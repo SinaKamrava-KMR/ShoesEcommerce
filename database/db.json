@@ -1,9 +1,319 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "users": [
+    {
+      "id": "1deacb16-3554-45f9-a51f-a41349492cae",
+      "firstName": "sina",
+      "lastName": "kamrava",
+      "email": "sina@gmail.com",
+      "password": "123",
+      "addresses": {
+        "home": "tonekabon,mazandaran,22",
+        "office": ",ramsar,mazandaran,45",
+        "appartment": "338 Terra Cotta Street"
+      },
+      "ordersID": [
+        "e69e75dc-4a12-46ed-8482-2ac01cbed21c",
+        "7e28f42c-596e-420b-9afe-7269f0095551"
+      ],
+      "wishlists": [
+        "da8e8dba-9be6-45ef-976b-1a2060ee272c",
+        "b60bcbfe-5822-4b53-95ec-aacaa466312e",
+        "0961892d-3539-4f8d-ac1f-ab1306a4eca3"
+      ]
+    },
+    {
+      "id": "a137dd66-7109-42e6-bb60-19b83da4b469",
+      "firstName": "Ali",
+      "lastName": "Samadi",
+      "email": "samad@gmail.com",
+      "password": "123",
+      "addresses": {
+        "home": "Tehran,Tehran,43",
+        "office": ",Lahijan,Gilan,56"
+      },
+      "ordersID": [
+        "e69e77dc-4a12-46ed-8482-2ac01cbed21c",
+        "7e28f42c-596e-420b-9nfe-7269f0095551"
+      ],
+      "wishlists": [
+        "f6cec450-903a-4ab8-8ed8-f0f595a986f8",
+        "09f87817-f3e2-411d-af2b-91b64dd51926"
+      ]
+    },
+    {
+      "id": "29fb3045-faf1-47b6-b4b0-3f34c81aa1b3",
+      "firstName": "Yaser",
+      "lastName": "Hamedi",
+      "email": "hamed@gmail.com",
+      "password": "123",
+      "addresses": {
+        "home": "rasht,Gilan,22",
+        "office": ",Fooman,Gilan,66"
+      },
+      "ordersID": [
+        "a69e75dc-4a12-46ed-8482-2ac01cbed21c",
+        "7e28f42c-596a-420b-9afe-7269f0095551"
+      ],
+      "wishlists": [
+        "f6cec551-903a-4ab8-8ed8-f0f595a986f8",
+        "09f87817-f3e2-411d-af1b-91b64dd51928"
+      ]
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "products": [
+    {
+      "id": "653488d5-6b2a-4d73-8790-40f798cde049",
+      "images": [
+        "../../assets/images/Rectangle6.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle6.png",
+      "title": "Ariat International",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 123.4,
+      "sizes": [
+        24,
+        32,
+        45,
+        46,
+        52
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 120,
+      "rate": 4.2,
+      "viewers": 2345,
+      "brand": "nike"
+    },
+    {
+      "id": "bf24b7b0-f78a-4764-8e8e-03260488a874",
+      "images": [
+        "../../assets/images/Rectangle8.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle6.png",
+      "title": "Air Jordan 3 Retro",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 23.4,
+      "sizes": [
+        24,
+        32,
+        45,
+        46,
+        52
+      ],
+      "colors": [
+        "green",
+        "red",
+        "slate"
+      ],
+      "soldNumbers": 420,
+      "rate": 3.2,
+      "viewers": 2345,
+      "brand": "adidas"
+    },
+    {
+      "id": "da8e8dba-9be6-45ef-976b-1a2060ee272c",
+      "images": [
+        "../../assets/images/Rectangle9.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle9.png",
+      "title": "Western riding boots.",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 73.4,
+      "sizes": [
+        14,
+        42,
+        45
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 420,
+      "rate": 3.2,
+      "viewers": 2345,
+      "brand": "nike"
+    },
+    {
+      "id": "0961892d-3539-4f8d-ac1f-ab1306a4eca3",
+      "images": [
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle10.png",
+      "title": "Air Jordan 3 Retro",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 73.4,
+      "sizes": [
+        14,
+        42,
+        45
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 420,
+      "rate": 3.2,
+      "viewers": 2345,
+      "brand": "puma"
+    },
+    {
+      "id": "bbc58602-2bc6-4516-ab2e-523247dceed8",
+      "images": [
+        "../../assets/images/Rectangle7.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle7.png",
+      "title": " then went on to hire a number",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 737.4,
+      "sizes": [
+        43,
+        42,
+        45
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 420,
+      "rate": 4.7,
+      "viewers": 5345,
+      "brand": "asics"
+    },
+    {
+      "id": "b60bcbfe-5822-4b53-95ec-aacaa466312e",
+      "images": [
+        "../../assets/images/Rectangle6.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle7.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle8.png",
+      "title": "homes for injured war veterans",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 98.1,
+      "sizes": [
+        41,
+        42,
+        45
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 620,
+      "rate": 2.7,
+      "viewers": 600,
+      "brand": "reebok"
+    },
+    {
+      "id": "154eaa26-6363-42f7-9594-057f4196007c",
+      "images": [
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle6.png",
+      "title": "Junior Equestrians,",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 123.4,
+      "sizes": [
+        24,
+        32,
+        45,
+        46,
+        52
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 120,
+      "rate": 4.2,
+      "viewers": 2345,
+      "brand": "nike"
+    },
+    {
+      "id": "6e848481-8821-435e-b8de-7a4e935be912",
+      "images": [
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle11.png",
+        "../../assets/images/Rectangle10.png",
+        "../../assets/images/Rectangle8.png"
+      ],
+      "tinyImage": "../../assets/images/Rectangle8.png",
+      "title": "that was developed to provide",
+      "description": "In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorp",
+      "price": 303.4,
+      "sizes": [
+        45,
+        46,
+        52
+      ],
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "soldNumbers": 170,
+      "rate": 3.2,
+      "viewers": 2345,
+      "brand": "nike"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "orders": [
+    {
+      "id": 1,
+      "userID": "1deacb16-3554-45f9-a51f-a41349492cae",
+      "productID": "653488d5-6b2a-4d73-8790-40f798cde049",
+      "image": "../../assets/images/Rectangle6.png",
+      "color": "red",
+      "size": "45",
+      "status": "active",
+      "count": 1,
+      "title": "Ariat International",
+      "price": 123.4,
+      "totalPrice": "123.40",
+      "paymentMethod": "",
+      "shippingAddress": ""
+    },
+    {
+      "id": 2,
+      "userID": "1deacb16-3554-45f9-a51f-a41349492cae",
+      "productID": "154eaa26-6363-42f7-9594-057f4196007c",
+      "image": "../../assets/images/Rectangle10.png",
+      "color": "blue",
+      "size": "45",
+      "status": "active",
+      "count": 10,
+      "title": "Junior Equestrians,",
+      "price": 123.4,
+      "totalPrice": "1234.00",
+      "paymentMethod": "",
+      "shippingAddress": ""
+    }
+  ]
 }
