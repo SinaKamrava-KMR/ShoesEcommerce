@@ -8,7 +8,6 @@ export class Catch{
     localStorage.setItem(key, JSON.stringify([value]));
   }
 
-
    checkSplashstate() {
      const state = this.#getItem('spalsh');
      if (state?.[0] == 'on') {
@@ -21,7 +20,6 @@ export class Catch{
    setSplashstate(value) {
     this.#setItem('spalsh', value);
   }
-
 
   checkUser() {
     let list = this.#getItem('user');
